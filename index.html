@@ -11,8 +11,8 @@
 <body>
     <div id="App" class="container">
         <div class="subContainer">
-            <input type="text" placeholder="Inserisci Task">
-            <label> Aggiungi </label>
+            <input type="text" placeholder="Inserisci Task" v-model="newTask">
+            <label @click="aggiungiTask"> Aggiungi </label>
         </div>
 
         <ul>

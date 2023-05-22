@@ -62,6 +62,10 @@ li{
     margin: 1rem 0;
 }
 
+li:hover{
+    background-color: rgb(152, 255, 241);
+}
+
 button{
     background-color: aqua;
     padding: 0.5rem 1rem;

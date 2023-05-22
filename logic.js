@@ -15,9 +15,17 @@
             "Fare i compiti",
             "Fare la spesa",
             "Fare il bucato",
-            "Fare il pieno"
+            "Fare il pieno",
+            "Fare l'Amore"
           ]
         };
+      },
+
+      methods: {
+        aggiungiTask () {
+            this.tasks.push(this.newTask);
+            this.newTask = "";
+        }
       }
     }).mount("#App");
     
