@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ToDoList</title>
 </head>
 <body>
-    
+    <div id="App" class="container">
+        <div class="subContainer">
+            <input type="text" placeholder="Inserisci Task">
+            <label> Aggiungi </label>
+        </div>
 
+        <ul>
+            <li v-for="task in tasks">
+              {{ task }}
+              <button>
+                <i class="fa-regular fa-x"></i>
+              </button>
+            </li>
+          </ul>
+          
+    </div>
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

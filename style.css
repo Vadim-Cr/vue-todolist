@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    width: 80%;
+    margin: auto;
+}
+
+.subContainer{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+input{
+    /* text-align: center; */
+    width: 75%;
+    border: 3px solid purple;
+    border-radius: 2rem;
+    height: 2rem;
+    padding:0 1.5rem;
+    font-size: 1rem;
+}
+
+label{
+    display: block;
+    width: 15%;
+    height: 2rem;
+    text-align: center;
+    background-color: gray;
+    border-radius: 2rem;
+    padding: 0.25rem;
+}
+
+
+ul{
+    width: 60%;
+    margin: auto;
+    list-style: none;
+    background-color: cadetblue;
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+}
+
+li{
+    border-bottom: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+button{
+    background-color: aqua;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 4px solid darkred
+}
+
+button:hover, label:hover{
+    cursor: pointer;
+}
+
+button:active label:active {
+    background-color: red;
+}
+
+label:active {
+    background-color: lightgreen;
+}
+
+.fa-regular{
+    font-size: 1.5rem;
+}
