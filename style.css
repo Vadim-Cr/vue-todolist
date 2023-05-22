@@ -11,6 +11,7 @@
     padding: 3rem;
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 .subContainer{
@@ -39,6 +40,11 @@ label{
     background-color: gray;
     border-radius: 2rem;
     padding: 0.25rem;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
 }
 
 

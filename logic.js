@@ -23,10 +23,20 @@
 
       methods: {
         aggiungiTask () {
-            this.tasks.push(this.newTask);
-            this.newTask = "";
+            if (this.newTask !== "" && this.newTask.length >= 5) {
+                this.tasks.unshift(this.newTask);
+                this.newTask = "";
+                this.error = false;
+            } else {
+                this.error = true;
+            }
+        },
+        rimuoviTask (indx) {
+        //   console.log(indx);
+        this.tasks.splice(indx, 1);
         }
       }
+
     }).mount("#App");
     
 

@@ -11,19 +11,22 @@
 <body>
     <div id="App" class="container">
         <div class="subContainer">
-            <input type="text" placeholder="Inserisci Task" v-model="newTask">
+            <input type="text" placeholder="Inserisci Task" v-model="newTask" @keyup.enter="aggiungiTask">
             <label @click="aggiungiTask"> Aggiungi </label>
+        </div>
+        <div class="error" v-if="error">
+            <small>Devi inserire almeno 5 (cinque) caratteri! </small>
         </div>
 
         <ul>
-            <li v-for="task in tasks">
+            <li v-for="(task, index) in tasks">
               {{ task }}
-              <button>
+              <button @click.stop="rimuoviTask(index)">
                 <i class="fa-regular fa-x"></i>
               </button>
             </li>
           </ul>
-          
+          <h2 v-if="tasks.length === 0"> BRAVO, NON CI SONO PIU' TASK</h2>
     </div>
 
 
