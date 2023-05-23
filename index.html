@@ -19,7 +19,7 @@
         </div>
 
         <ul>
-            <li v-for="(task, indx) in tasks" :class="{barrato: isBarrato[indx]}" @click="toggleBarrato[indx]">
+            <li v-for="(task, indx) in tasks" :class="{barrato: isBarrato}" @click="toggleBarrato(indx)">
               {{ task }}
               <button @click.stop="rimuoviTask(indx)">
                 <i class="fa-regular fa-x"></i>
