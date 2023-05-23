@@ -19,9 +19,9 @@
         </div>
 
         <ul>
-            <li v-for="(task, index) in tasks">
+            <li v-for="(task, indx) in tasks" :class="{barrato: isBarrato[indx]}" @click="toggleBarrato[indx]">
               {{ task }}
-              <button @click.stop="rimuoviTask(index)">
+              <button @click.stop="rimuoviTask(indx)">
                 <i class="fa-regular fa-x"></i>
               </button>
             </li>

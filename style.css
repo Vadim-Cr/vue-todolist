@@ -68,6 +68,10 @@ li{
     margin: 1rem 0;
 }
 
+.barrato{
+    text-decoration: line-through;
+}
+
 li:hover{
     background-color: rgb(152, 255, 241);
 }

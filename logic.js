@@ -10,6 +10,7 @@
       data() {
         return {
           error: false,
+          isBarrato: false,
           newTask: "",
           tasks: [
             "Fare i compiti",
@@ -22,6 +23,7 @@
       },
 
       methods: {
+
         aggiungiTask () {
             if (this.newTask !== "" && this.newTask.length >= 5) {
                 this.tasks.unshift(this.newTask);
@@ -31,9 +33,15 @@
                 this.error = true;
             }
         },
+
         rimuoviTask (indx) {
         //   console.log(indx);
         this.tasks.splice(indx, 1);
+        },
+
+        toggleBarrato () {
+
+            this.isBarrato = !this.isBarrato;
         }
       }
 
